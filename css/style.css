@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css?family=Volkhov");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: volkhov, helvetica, times;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  background: #dedcdb;
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+@media (max-width: 700px) {
+  li {
+    margin: 5px auto 5px auto;
+  }
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: #4484ff;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+img {
+  height: 45px;
+  width: 200px;
+  margin: 10px 10px 10px 30px;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+nav ul li:hover {
+  font-style: italic;
+}
+nav ul li {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#intro {
+  padding-top: 230px;
+  text-align: center;
+}
+#intro input {
+  display: flex;
+  justify-content: center;
+  margin: 5px auto 15px auto;
+}
+@media (max-width: 500px) {
+  #intro input {
+    margin: auto;
+  }
+}
+
+#email {
+  height: 40px;
+  width: 250px;
+  border: none;
+  border-bottom: dashed;
+  text-align: center;
+  background: transparent;
+}
+@media (max-width: 500px) {
+  #email {
+    margin: auto;
+  }
+}
+
+#submit {
+  height: 45px;
+  width: 180px;
+  background-color: #ff9244;
+  border: none;
+}
+@media (max-width: 500px) {
+  #submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+#submit:hover {
+  background-color: gold;
+  cursor: pointer;
+}
+
+#features {
+  margin-top: 40px;
+}
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  width: 30%;
+  color: #2f8ac7;
+}
+@media (max-width: 500px) {
+  #features .icon {
+    display: none;
+  }
+}
+#features .featuresText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 100%;
+  padding: 5px;
+  margin-left: 20px;
+}
+@media (max-width: 800px) {
+  #features .featuresText {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  #features .featuresText {
+    text-align: center;
+  }
+}
+
+#lessons {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  color: gold;
+}
+@media (max-width: 500px) {
+  #lessons {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#lessons .lessonWrap {
+  max-width: 200px;
+  min-width: 150px;
+  margin: 0 70px;
+  background-color: #2f8ac7;
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: gold;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  #lessons .lessonWrap {
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+}
+
+#videos {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+#payment-plans {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+@media (max-width: 800px) {
+  #payment-plans {
+    flex-direction: column;
+  }
+}
+#payment-plans .paymentTitle {
+  display: flex;
+  justify-content: center;
+  background: orange;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+#payment-plans .plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  border: solid;
+  margin: 0 30px;
+  text-align: left;
+  background-color: transparent;
+}
+@media (max-width: 800px) {
+  #payment-plans .plans {
+    margin: auto auto 50px auto;
+  }
+}
+#payment-plans p {
+  padding: 50px;
+  margin-bottom: 0;
+  color: #000;
+}
+#payment-plans .btn {
+  margin-bottom: 30px;
+  height: 40px;
+  width: 130px;
+  background-color: #ff9244;
+  border-color: black;
+}
+#payment-plans .btn:hover {
+  background-color: #96c5e6;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  margin-top: 100px;
+  margin-bottom: 0;
+  background: #ddd;
+  align-items: center;
+  vertical-align: bottom;
+  background-color: #4484ff;
+}
+@media (max-width: 700) {
+  footer {
+    flex-direction: column;
+  }
+}
+footer span {
+  padding: 20px;
+  float: left;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 1 30%;
+}
+@media (max-width: 700px) {
+  footer ul {
+    flex-direction: column;
+  }
+}
